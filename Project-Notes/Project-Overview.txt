@@ -1,0 +1,34 @@
+Project Name: Project Generator
+
+Purpose: To input a project request and output a project folder with the desired architecture
+
+Summary: 
+This program will be used for scaffolding a project by simply answering a few questions. 
+The purpose for this is to eliminate excess items that are often generated when using things like, Create React App or Vite, etc. 
+We only want to generate what's needed and allow the user to go from there. 
+We want to keep it simple but also provide a professional structure to promote healthy habits and practices in development. 
+
+Stack:
+C# (V1)
+C# + React (V2+)
+
+Architecture: 
+
+Clean architecture design
+
+V1: 
+Core - Defines business logic and rules
+Infrastructure - Executes logic
+Console - UI layer for taking in inputs and providing results
+Test - Testing layer for Core logic
+
+Dependency Flow: 
+
+Console Layer > Infrastructure
+Console Layer > Core
+Infrastructure > Core
+Core > nothing
+
+Core is the center here and should always be standalone
+This will help with scalability for future versions
+
