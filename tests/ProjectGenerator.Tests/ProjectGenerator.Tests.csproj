@@ -24,6 +24,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\ProjectGenerator.Core\ProjectGenerator.Core.csproj" />
+    <ProjectReference Include="..\..\src\ProjectGenerator.Application\ProjectGenerator.Application.csproj" />
+    <ProjectReference Include="..\..\src\ProjectGenerator.Infrastructure\ProjectGenerator.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
