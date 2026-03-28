@@ -5,6 +5,7 @@ using ProjectGenerator.Core.Enums;
 using ProjectGenerator.Core.Pipeline.Context;
 using ProjectGenerator.Core.Pipeline.Interfaces;
 using ProjectGenerator.Infrastructure.Templates;
+using ProjectGenerator.Infrastructure.FileSystem;
 
 using SysConsole = System.Console;
 
@@ -39,7 +40,7 @@ class Program
             new ValidationStage(),
             new TemplateResolutionStage(new BasicTemplateProvider()),
             new LogicalGenerationStage(),
-            new MaterializationStage()
+            new MaterializationStage(new FileSystemMaterializer())
         };
 
 
