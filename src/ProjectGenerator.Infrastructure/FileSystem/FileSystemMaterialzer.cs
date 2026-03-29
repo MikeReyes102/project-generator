@@ -3,8 +3,10 @@ using ProjectGenerator.Core.Domain;
 
 namespace ProjectGenerator.Infrastructure.FileSystem;
 
+// Implements IProjectMaterializer to write the generated project to the file system.
 public class FileSystemMaterializer : IProjectMaterializer
 {
+    // Writes the generated project to disk, creating directories and files as needed.
     public async Task MaterializeAsync(
         GeneratedProject project,
         CancellationToken cancellationToken)

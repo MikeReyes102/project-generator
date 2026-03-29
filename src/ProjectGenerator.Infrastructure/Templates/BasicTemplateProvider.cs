@@ -4,16 +4,19 @@ using ProjectGenerator.Core.Enums;
 
 namespace ProjectGenerator.Infrastructure.Templates;
 
+// Provides a basic frontend project template (HTML/CSS/JS) based on the request.
 public class BasicTemplateProvider : ITemplateProvider
 {
+    // Returns a project template for a basic frontend project.
     public ProjectTemplate GetTemplate(ProjectRequest request)
     {
         var template = new ProjectTemplate("Basic Frontend");
 
-        // Base structure
+        // Add base directories
         template.AddDirectory("styles");
         template.AddDirectory("scripts");
 
+        // Add base files
         template.AddFile(new TemplateFile(
             "index.html",
             "<html><head><title>{{ProjectName}}</title></head><body><h1>Welcome</h1></body></html>"
@@ -29,7 +32,7 @@ public class BasicTemplateProvider : ITemplateProvider
             "console.log('App initialized');"
         ));
 
-        // Multi-page support (based on request)
+        // Add multi-page support if requested
         if (request.PageConfig.PageType == PageType.MultiPage)
         {
             template.AddDirectory("pages");
