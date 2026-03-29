@@ -1,4 +1,4 @@
-# Project Generator
+# Project Generator (V1)
 
 Project Generator is a modular .NET 8.0 application for generating project scaffolding and codebases based on customizable templates and user-defined options. It is designed for extensibility, maintainability, and ease of use, supporting a pipeline-based architecture for validation, template resolution, logical generation, and materialization.
 
@@ -70,6 +70,9 @@ tests/                           # Unit and integration tests
 
 Contributions are welcome! Please open issues or pull requests for bug fixes, new features, or improvements.
 
-## License
+## Roadmap
 
-This project is licensed under the MIT License.
+### V2 (Planned)
+
+- Add interactive user input for project generation (CLI prompts or arguments)
+- Add a new template option for React projects
