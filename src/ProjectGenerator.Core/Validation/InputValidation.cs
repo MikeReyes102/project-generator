@@ -31,6 +31,12 @@ public static class InputValidation
         {
             result.AddError("Project name cannot contain spaces.");
         }
+
+        // Reject project names containing path traversal or separators
+        if (name.Contains(".") || name.Contains("/") || name.Contains("\\"))
+        {
+            result.AddError("Project name cannot contain '.', '/' or '\' characters.");
+        }
     }
 
     private static void ValidatePageConfiguration(PageConfiguration config, ValidationResult result)

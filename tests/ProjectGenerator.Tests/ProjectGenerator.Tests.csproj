@@ -28,4 +28,16 @@
     <ProjectReference Include="..\..\src\ProjectGenerator.Infrastructure\ProjectGenerator.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="TestData\validRequests.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TestData/*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

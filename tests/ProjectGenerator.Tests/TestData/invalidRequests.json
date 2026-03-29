@@ -1,0 +1,68 @@
+[
+  {
+    "ProjectName": "",
+    "PageType": "SinglePage",
+    "PageCount": 0,
+    "ShouldSucceed": false,
+    "ExpectedErrorContains": "Project name"
+  },
+  {
+    "ProjectName": "   ",
+    "PageType": "SinglePage",
+    "PageCount": 0,
+    "ShouldSucceed": false,
+    "ExpectedErrorContains": "Project name"
+  },
+  {
+    "ProjectName": "ab",
+    "PageType": "SinglePage",
+    "PageCount": 0,
+    "ShouldSucceed": false,
+    "ExpectedErrorContains": "Project name"
+  },
+  {
+    "ProjectName": "invalid name with spaces",
+    "PageType": "SinglePage",
+    "PageCount": 0,
+    "ShouldSucceed": false,
+    "ExpectedErrorContains": "Project name"
+  },
+
+  {
+    "ProjectName": "BadMultiZero",
+    "PageType": "MultiPage",
+    "PageCount": 0,
+    "ShouldSucceed": false,
+    "ExpectedErrorContains": "Page count"
+  },
+  {
+    "ProjectName": "BadMultiNegative",
+    "PageType": "MultiPage",
+    "PageCount": -1,
+    "ShouldSucceed": false,
+    "ExpectedErrorContains": "Page count"
+  },
+  {
+    "ProjectName": "BadMultiTooHigh",
+    "PageType": "MultiPage",
+    "PageCount": 6,
+    "ShouldSucceed": false,
+    "ExpectedErrorContains": "Page count"
+  },
+
+  {
+    "ProjectName": "",
+    "PageType": "MultiPage",
+    "PageCount": 10,
+    "ShouldSucceed": false,
+    "ExpectedErrorContains": "Project name"
+  },
+
+  {
+    "ProjectName": "../hack",
+    "PageType": "SinglePage",
+    "PageCount": 0,
+    "ShouldSucceed": false,
+    "ExpectedErrorContains": "Project name"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "ProjectName": "SinglePageStandard",
+    "PageType": "SinglePage",
+    "PageCount": 0,
+    "ExpectedFileCount": 3
+  },
+  {
+    "ProjectName": "singlepage-lowercase",
+    "PageType": "SinglePage",
+    "PageCount": 0,
+    "ExpectedFileCount": 3
+  },
+  {
+    "ProjectName": "single_page_underscore",
+    "PageType": "SinglePage",
+    "PageCount": 0,
+    "ExpectedFileCount": 3
+  },
+
+  {
+    "ProjectName": "MultiPageMin",
+    "PageType": "MultiPage",
+    "PageCount": 1,
+    "ExpectedFileCount": 4
+  },
+  {
+    "ProjectName": "multi-page-two",
+    "PageType": "MultiPage",
+    "PageCount": 2,
+    "ExpectedFileCount": 5
+  },
+  {
+    "ProjectName": "MultiPageMid",
+    "PageType": "MultiPage",
+    "PageCount": 3,
+    "ExpectedFileCount": 6
+  },
+  {
+    "ProjectName": "multi_page_four",
+    "PageType": "MultiPage",
+    "PageCount": 4,
+    "ExpectedFileCount": 7
+  },
+  {
+    "ProjectName": "MultiPageMax",
+    "PageType": "MultiPage",
+    "PageCount": 5,
+    "ExpectedFileCount": 8
+  }
+]
