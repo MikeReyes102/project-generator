@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NDS Project Generator</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Project Generator</h1>
+
+        <div class="form-group">
+            <label>Project Name</label>
+            <input id="projectName" type="text" placeholder="Nova Starter">
+        </div>
+
+        <div class="form-group">
+            <label>Template</label>
+
+            <select id="template">
+                <option value="react">React</option>
+                <option value="node">Node</option>
+                <option value="html">HTML</option>
+            </select>
+        </div>
+
+        <button id="generateBtn">
+            Generate Project
+        </button>
+
+        <pre id="response"></pre>
+
+    </main>
+
+    <script src="config/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "project-generator-client",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

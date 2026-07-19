@@ -1,0 +1,11 @@
+{
+  "name": "project-generator",
+  "version": "1.0.0",
+  "description": "NDS Project Generator",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run client --prefix client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
