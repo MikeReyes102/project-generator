@@ -1,14 +1,177 @@
 /*
+    ============================================================================
     Project:
     Author:
     Created:
+    Description:
+    ============================================================================
 */
 
-* {
-    box-sizing: border-box;
+
+/*
+    ============================================================================
+    Header
+    ============================================================================
+*/
+
+header {
+
+    padding: var(--spacing-lg);
+
+    background-color: var(--color-primary);
+
+    color: var(--color-text-light);
+
 }
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+
+/*
+    ============================================================================
+    Navigation
+    ============================================================================
+*/
+
+nav {
+
+    margin-bottom: var(--spacing-xl);
+
+}
+
+
+nav ul {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: var(--spacing-lg);
+
+}
+
+
+nav a {
+
+    color: var(--color-text-light);
+
+    transition: opacity var(--transition-speed);
+
+}
+
+
+nav a:hover {
+
+    opacity: 0.75;
+
+}
+
+
+/*
+    ============================================================================
+    Header Content
+    ============================================================================
+*/
+
+.header-content {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+
+.header-content h1 {
+
+    margin-bottom: var(--spacing-sm);
+
+}
+
+
+.header-content p {
+
+    line-height: 1.6;
+
+}
+
+
+
+/*
+    ============================================================================
+    Main Content
+    ============================================================================
+*/
+
+main {
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    padding: var(--spacing-xl) var(--spacing-lg);
+
+}
+
+
+main section {
+
+    padding: var(--spacing-lg);
+
+    background-color: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--border-radius);
+
+}
+
+
+
+/*
+    ============================================================================
+    Footer
+    ============================================================================
+*/
+
+footer {
+
+    padding: var(--spacing-md);
+
+    background-color: var(--color-surface);
+
+    border-top: 1px solid var(--color-border);
+
+    text-align: center;
+
+    color: var(--color-secondary);
+
+}
+
+
+
+/*
+    ============================================================================
+    Responsive Layout
+    ============================================================================
+*/
+
+@media (max-width: 768px) {
+
+
+    nav ul {
+
+        flex-direction: column;
+
+        gap: var(--spacing-sm);
+
+    }
+
+
+    main {
+
+        padding: var(--spacing-lg) var(--spacing-md);
+
+    }
+
 }
