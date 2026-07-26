@@ -1,0 +1,105 @@
+/*
+    ============================================================================
+    Project:
+    Author:
+    Created:
+    Description:
+    ============================================================================
+*/
+
+
+/*
+    ============================================================================
+    Application Layout
+    ============================================================================
+*/
+
+#root {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+header {
+
+    padding: var(--spacing-xl) var(--spacing-md);
+
+    text-align: center;
+
+}
+
+
+header h1 {
+
+    margin-bottom: var(--spacing-sm);
+
+}
+
+
+header p {
+
+    color: var(--color-secondary);
+
+}
+
+
+main {
+
+    flex: 1;
+
+    width: 100%;
+
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    padding: var(--spacing-lg) var(--spacing-md);
+
+}
+
+
+section {
+
+    background-color: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--border-radius);
+
+    padding: var(--spacing-lg);
+
+}
+
+
+section h2 {
+
+    margin-bottom: var(--spacing-md);
+
+}
+
+
+section ul {
+
+    margin-top: var(--spacing-md);
+
+    list-style: disc;
+
+    padding-left: var(--spacing-lg);
+
+}
+
+
+footer {
+
+    padding: var(--spacing-md);
+
+    text-align: center;
+
+    color: var(--color-secondary);
+
+}

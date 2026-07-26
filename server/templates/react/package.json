@@ -2,8 +2,8 @@
   "name": "react-starter",
   "private": true,
   "version": "1.0.0",
-  "type": "module",
   "description": "A minimal React starter project.",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
