@@ -10,11 +10,20 @@ async function generate(project) {
         project.template
     );
 
-    const outputPath = path.join(
+
+    const defaultOutput = path.join(
         __dirname,
         "..",
         "..",
-        "output",
+        "output"
+    );
+
+
+    const baseOutput = project.outputPath || defaultOutput;
+
+
+    const outputPath = path.join(
+        baseOutput,
         project.name
     );
 
