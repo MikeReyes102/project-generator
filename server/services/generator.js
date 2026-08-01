@@ -1,6 +1,47 @@
 const fs = require("fs/promises");
 const path = require("path");
 
+async function getTemplates() {
+
+    const templatesPath = path.join(
+        __dirname,
+        "..",
+        "templates"
+    );
+
+    const entries = await fs.readdir(
+        templatesPath,
+        {
+            withFileTypes: true
+        }
+    );
+
+    const templates = entries
+        .filter(entry => entry.isDirectory())
+        .map(entry => ({
+            id: entry.name,
+            name: formatTemplateName(entry.name)
+        }));
+
+    return {
+        success: true,
+        templates
+    };
+
+}
+
+function formatTemplateName(name) {
+
+    return name
+        .split("-")
+        .map(word =>
+            word.charAt(0).toUpperCase() +
+            word.slice(1)
+        )
+        .join(" ");
+
+}
+
 async function generate(project) {
 
     const templatePath = path.join(
@@ -47,5 +88,6 @@ async function generate(project) {
 
 
 module.exports = {
-    generate
+    generate,
+    getTemplates
 };
